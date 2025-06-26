@@ -94,6 +94,18 @@ void search(int element, node *&parent,  node *&currentnode)
    
 }
 
+bool isEmpty()
+{
+    //checks if the tree is empty
+    return root ==nullptr;
+}
+
 void inorder(node *ptr)
-{}
+{
+    if (isEmpty())
+    {
+        
+    }
+    
+}
 }
