@@ -55,7 +55,7 @@ void insert()
         //5b : exit
         return;
     }
-    
+
     //step 6: if the value in the data field of new node is less then tht of parent
     if (x < parent ->info)
     {
@@ -65,7 +65,20 @@ void insert()
         //6b : exit
         return;
     }
-    
+
+    //step 7 : if the value in the data field of the new node is greater than tht of the parent 
+    else if (x > parent->info)
+    {
+        //7a : make the right child of parent point to th enew node
+        parent->rightchild = newnode;
+
+        //7b : exit
+        return;
+    }
+  }
+
+void search
+{
     
 }
 }
