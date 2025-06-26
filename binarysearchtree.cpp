@@ -55,10 +55,15 @@ void insert()
         //5b : exit
         return;
     }
+    
     //step 6: if the value in the data field of new node is less then tht of parent
     if (x < parent ->info)
     {
-        /* code */
+        //6a : make the left child of parent point to the new node
+        parent->leftchild = newnode;
+
+        //6b : exit
+        return;
     }
     
     
