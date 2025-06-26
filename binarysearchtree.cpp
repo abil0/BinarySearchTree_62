@@ -30,5 +30,15 @@ void insert()
     int x;
     cout << "masukkan nilai: " ;
     cin >> x;
+
+    //step 1 : allocate memory for the new node
+    node *newnode = new node();
+
+    //step 2 : assign value to the data field of new node 
+    newnode->info = x;
+
+    //step 3 : make the left and right child of the new node point to null
+    newnode->leftchild = nullptr;
+    newnode->rightchild = nullptr;
 }
 }
