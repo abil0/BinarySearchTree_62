@@ -15,3 +15,20 @@ public:
         rightchild = nullptr; //initialize right child to null
      }
 };
+class binarytree
+{
+public:
+    node*root;
+
+    binarytree()
+
+    {
+        root = nullptr; //initializing root to null
+    }
+void insert()
+{
+    int x;
+    cout << "masukkan nilai: " ;
+    cin >> x;
+}
+}
