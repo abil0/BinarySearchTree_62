@@ -40,5 +40,27 @@ void insert()
     //step 3 : make the left and right child of the new node point to null
     newnode->leftchild = nullptr;
     newnode->rightchild = nullptr;
+    
+    //step 4: locate the node which will be the parent of the new node to be inserted
+    node *parent = nullptr;
+    node *currentnode = nullptr;
+    search(x, parent,currentnode);
+
+    //step 5: if parent is null (tree is empty)
+    if (parent == nullptr)
+    {
+        //5a :mark the new node as root
+        root = newnode;
+
+        //5b : exit
+        return;
+    }
+    //step 6: if the value in the data field of new node is less then tht of parent
+    if (x < parent ->info)
+    {
+        /* code */
+    }
+    
+    
 }
 }
